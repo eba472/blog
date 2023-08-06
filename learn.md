@@ -1,0 +1,52 @@
+Useful commands:
+`npm run dev`: Starts the development server.
+`npm run build`: Builds the app for production.
+`npm start`: Runs the built app in production mode.
+`npx next -v`: Check next version
+
+
+Next.js foundation course:
+
+
+There are a few things you need to consider when building modern applications. Such as:
+
+1. User Interface - how users will consume and interact with your application.
+2. Routing - how users navigate between different parts of your application.
+3. Data Fetching - where your data lives and how to get it.
+4. Rendering - when and where you render static or dynamic content.
+5. Integrations - what third-party services you use (CMS, auth, payments, etc) and how you connect to them.
+6. Infrastructure - where you deploy, store, and run your application code (Serverless, CDN, Edge, etc).
+7. Performance - how to optimize your application for end-users.
+8. Scalability - how your application adapts as your team, data, and traffic grow.
+9. Developer Experience - your team’s experience building and maintaining your application.
+
+`Imperative programming` is like giving a chef step-by-step instructions on how to make a pizza. (Jquery DOM manipulation)
+`Declarative programming` is like ordering a pizza without being concerned about the steps it takes to make the pizza. (ReactJS)
+
+### Tools
+`ReactJS`: Unopinionated declarative UI library
+- `Components` allow you to build self-contained, reusable snippets of code (Lego bricks). This modularity allows your code to be more maintainable
+- `Props`: Arguments to function. (Pass info)
+- `Hooks`: allow you to add additional logic such as state to your components.
+- `State`: any information in your UI that changes over time, usually triggered by user interaction.
+`Next.js`: Flexible React framework. (No babel, instant refresh)
+- Dev exp:  TypeScript and ESLint integration, Fast Refresh, and more.
+- Production: Transform the code to make it performant and accessible. Application code needs to be compiled, bundled, minified, and code split. (compiler written in Rust)
+`JSX` is a syntax extension for JavaScript that allows you to describe your UI in a familiar HTML-like syntax.
+`JavaScript compiler`, such as a `Babel`, to transform your JSX code into regular JavaScript.
+
+Words
+`Compiling`: refers to the process of taking code in one language and outputting it in another language.
+`Minification`: is the process of removing unnecessary code formatting and comments without changing the code’s functionality. Decrease file size
+`Bundling`: is the process of resolving the web of dependencies and merging (or ‘packaging’) the files (or modules) into optimized bundles for the browser.
+`Code-splitting`: splitting the application’s bundle into smaller chunks required by each entry point (urls) => improve the application's initial load time by only loading the code required to run.
+`build your application`: transform your code into production-optimized files ready to be deployed to servers and consumed by users. (HTML, CSS, JS)
+`Runtime` (or request time) refers to the period of time when your application runs in response to a user’s request, after your application has been built and deployed.
+`Rendering`: convert the code you write in React into the HTML. The beauty of Next.js is that you can choose the most appropriate rendering method for your use case on a page-by-page basis
+- Server-Side Rendering (Pre-Rendering): NextJS by default.  HTML is generated in advance, on a server
+  - React 18 and Next 12 introduce an alpha version of React server components.
+- Static Site Generation: content is generated once, at build time.
+- Client-Side Rendering: Standard React. the browser receives an empty HTML shell from the server along with the JavaScript instructions to construct the UI.
+  - Hydration: show a fast non-interactive page, while React uses the JSON data and JavaScript instructions to make components interactive
+`CDNs` store static content (such as HTML and image files) in multiple locations around the world and are placed between the client and the origin server.
+`Edge servers`. Similar to CDNs. can run small snippets of code. Reduced latency.
