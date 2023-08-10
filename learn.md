@@ -34,6 +34,7 @@ There are a few things you need to consider when building modern applications. S
 - Production: Transform the code to make it performant and accessible. Application code needs to be compiled, bundled, minified, and code split. (compiler written in Rust)
 `JSX` is a syntax extension for JavaScript that allows you to describe your UI in a familiar HTML-like syntax.
 `JavaScript compiler`, such as a `Babel`, to transform your JSX code into regular JavaScript.
+`Facebook sdk`: 
 
 Words
 `Compiling`: refers to the process of taking code in one language and outputting it in another language.
@@ -50,3 +51,17 @@ Words
   - Hydration: show a fast non-interactive page, while React uses the JSON data and JavaScript instructions to make components interactive
 `CDNs` store static content (such as HTML and image files) in multiple locations around the world and are placed between the client and the origin server.
 `Edge servers`. Similar to CDNs. can run small snippets of code. Reduced latency.
+
+### NextJS
+1. Navigation (No routing library required)
+   1. Pages are associated with a route based on their file name in the `pages` directory.
+   2. Link components to client-side navigate by JS. faster than browser (<a>). When <Link> appear in the browser’s viewport, Next.js prefetches the code for the linked page in the background.
+   3. If you need to link to an external page outside the Next.js app, just use an <a> tag without Link.
+2. Assets
+   1. Next.js can serve static assets, like images, robots.txt, under the top-level public directory. 
+   2. Image component is extension of <img>, handles responsive, optimize (WebP), lazy-loaded.
+   3. Metadata (Use <Head>)
+3. Third-Party JS such as facebook sdk can be added with Script tag
+4. CSS
+   1. component-lvl CSS is stored in .module.css files. 
+   2. Global css must be imported inside _app.js
