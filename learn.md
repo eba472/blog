@@ -65,3 +65,10 @@ Words
 4. CSS
    1. component-lvl CSS is stored in .module.css files. 
    2. Global css must be imported inside _app.js
+5. Rendering
+   1. pre-rendering: better perf & SEO
+      1. Static generation: html at build time (Blog, docs) (getStaticProps)
+      2. Server-side rendering: html at each req
+   2. Client-side: the same as old school React
+6. Dynamic routes /posts/[id] getStaticPaths
+7. API routes as Node.js serverless function: not part of client bundle. Use case: form input as POST 
