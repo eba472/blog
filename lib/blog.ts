@@ -4,38 +4,6 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const postsDirectory = path.join(process.cwd(), "posts");
-
-export function getSortedBlogsData() {
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
-    const id = fileName.replace(/\.md$/, "");
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-    const matterResult = matter(fileContents);
-    return {
-      id,
-      ...matterResult.data as MarkDownHeader,
-    };
-  });
-  return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
-}
-
-export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames.map((fileName) => {
-    return {
-      id: fileName.replace(/\.md$/, ""),
-    };
-  });
-}
-
 interface Blog {
   id: string;
   contentHtml: string;
@@ -48,8 +16,41 @@ interface MarkDownHeader {
   date: string;
 }
 
+
+const blogsDirectory = path.join(process.cwd(), "blogs");
+
+export function getSortedBlogsData() {
+  const fileNames = fs.readdirSync(blogsDirectory);
+  const allBlogsData = fileNames.map((fileName) => {
+    const id = fileName.replace(/\.md$/, "");
+    const fullPath = path.join(blogsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const matterResult = matter(fileContents);
+    return {
+      id,
+      ...matterResult.data as MarkDownHeader,
+    };
+  });
+  return allBlogsData.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+}
+
+export function getAllPostIds() {
+  const fileNames = fs.readdirSync(blogsDirectory);
+  return fileNames.map((fileName) => {
+    return {
+      id: fileName.replace(/\.md$/, ""),
+    };
+  });
+}
+
 export async function getBlogData(id: string): Promise<Blog> {
-  const fullPath = path.join(postsDirectory, `${id}.md`);
+  const fullPath = path.join(blogsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
   const processedContent = await remark()

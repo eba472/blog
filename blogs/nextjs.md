@@ -1,3 +1,8 @@
+---
+title: 'Learning nextJS'
+date: '2023-08-12'
+---
+
 Useful commands:
 `npm run dev`: Starts the development server.
 `npm run build`: Builds the app for production.
@@ -70,5 +75,5 @@ Words
       1. Static generation: html at build time (Blog, docs) (getStaticProps)
       2. Server-side rendering: html at each req
    2. Client-side: the same as old school React
-6. Dynamic routes /posts/[id] getStaticPaths
+6. Dynamic routes /blogs/[id] getStaticPaths
 7. API routes as Node.js serverless function: not part of client bundle. Use case: form input as POST 
