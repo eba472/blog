@@ -15,7 +15,7 @@ export default function LifeEvent({ event }: { event: IEvent }) {
       </p>
       <ol>
         {event.acc.map((ac) => (
-          <li>{ac}</li>
+          <li key={ac}>{ac}</li>
         ))}
       </ol>
     </li>

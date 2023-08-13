@@ -8,8 +8,8 @@ export const metadata = {
 export default function Home() {
   return (
     <section className={utilStyles.headingMd}>
-      <p>
-        Hello, I&rsquo;m <strong>Eba</strong>, a software engineer based in
+      <p className="mb-10 text-center">
+        Hello, I&rsquo;m <strong>Eba</strong>,<br/> a software engineer based in
         Tokyo, Japan 🇯🇵🗼.
       </p>
       <Gallery />
