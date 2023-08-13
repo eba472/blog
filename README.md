@@ -9,8 +9,12 @@ GOAL:
 
 
 TODO:
-- Add links to social media: Facebook, Instagram, Linkedin, Twitter, Github
-- View full resume as PDF
+- Remove tailwind from blog post ✅
+- center menu ✅
+- Add links to social media: Facebook, Instagram, Linkedin, Twitter, Github ✅
+- timeline
+- View full resume as PDF 
+- Good gallery view
 - List of projects
 - Image album: https://leerob.io/ 
 - My reads: twitter feed
@@ -26,3 +30,13 @@ Nice to have
 
 Knowledge:
 - People don't read lot of text
+
+
+projects page idea: 
+1. as a cards: https://chronark.com/projects
+2. as table: https://brittanychiang.com/archive
+
+
+Styles:
+- hover color change: https://brittanychiang.com/
+- mouse background color change: https://brittanychiang.com/

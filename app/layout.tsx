@@ -1,7 +1,6 @@
 import Image from "next/image";
 import clsx from "clsx";
 import localFont from "next/font/local";
-import utilStyles from "./styles/utils.module.css";
 import "./styles/global.css";
 import Navbar from "./components/navbar";
 import SocialNetwork from "./components/sns";
@@ -49,7 +48,7 @@ export default function Layout({ children }) {
               className="rounded-full"
               height={144}
               width={144}
-              alt=""
+              alt="profile"
             />
             <h1 className="text-3.5xl leading-6 font-extrabold tracking-tight mb-4 mt-4">
               {name}

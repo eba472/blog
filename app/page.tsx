@@ -1,3 +1,4 @@
+import Gallery from "./components/gallery";
 import utilStyles from "./styles/utils.module.css";
 
 export const metadata = {
@@ -11,6 +12,7 @@ export default function Home() {
         Hello, I&rsquo;m <strong>Eba</strong>, a software engineer based in
         Tokyo, Japan 🇯🇵🗼.
       </p>
+      <Gallery />
     </section>
   );
 }

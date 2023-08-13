@@ -1,4 +1,4 @@
-export default function Projects({ dateString }) {
+export default function Projects() {
   return (
     <>
       <h1>Projects</h1>

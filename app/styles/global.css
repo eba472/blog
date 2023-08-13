@@ -4,15 +4,28 @@
 
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply text-3xl mb-10;
   }
   h2 {
-    @apply text-xl;
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl m-5
   }
 
   img {
     @apply max-w-full block
   }
+  ol {
+    @apply list-decimal list-inside ml-4
+  }
+
+  ul {
+    @apply list-disc list-inside ml-4
+  }
+
+
 }
 
 html,
