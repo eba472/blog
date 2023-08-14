@@ -50,7 +50,7 @@ export default function Layout({ children }) {
               width={144}
               alt="profile"
             />
-            <h1 className="text-3.5xl leading-6 font-extrabold tracking-tight mb-4 mt-4">
+            <h1 className="text-3.5xl text-center font-extrabold tracking-tight mb-4 mt-4">
               {name}
             </h1>
           </header>

@@ -11,8 +11,13 @@ GOAL:
 TODO:
 - Refactoring: upgrade utils.module.css to tailwind ✅
 - Fix bug: when going too project, the title is moving ✅
-- detailed timeline with more info on projects
-- View full resume as PDF 
+- New idea tab: ideas as cards ✅
+- markdown file style fixes: url is not displayed
+- detailed timeline with more info on projects on each company
+- disable projects page with coming soon on top
+- Add filter by tags on blog
+- Write first blog on Japanese language from the book
+- feature: View full resume as PDF 
 - Good gallery view
 - List of projects
 - Image album: https://leerob.io/ 

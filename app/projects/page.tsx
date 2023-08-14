@@ -1,9 +1,3 @@
-import { id } from "date-fns/locale";
-import Link from "next/link";
-import { title } from "process";
-import date from "../components/date";
-import Gallery from "../components/gallery";
-
 export default function Projects() {
   return (
      <section className="text-base/loose p-1">
