@@ -1,7 +1,5 @@
 import { getAllPostIds, getBlogData } from "../../../lib/blog";
-import Head from "next/head";
 import Date from "../../components/date";
-import utilStyles from "./../../styles/utils.module.css";
 
 export async function generateMetadata({ params }) {
   const blog = await getBlogData(params.id);
@@ -14,8 +12,10 @@ export default async function Post({ params }) {
   const blog = await getBlogData(params.id);
   return (
     <article>
-      <h1 className={utilStyles.headingXl}>{blog.title}</h1>
-      <div className={utilStyles.lightText}>
+      <h1 className="text-2xl leading-tight font-extrabold tracking-tighter my-4">
+        {blog.title}
+      </h1>
+      <div className="text-gray-500">
         <Date dateString={blog.date} />
       </div>
       <div dangerouslySetInnerHTML={{ __html: blog.contentHtml }} />

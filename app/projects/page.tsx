@@ -1,8 +1,23 @@
+import { id } from "date-fns/locale";
+import Link from "next/link";
+import { title } from "process";
+import date from "../components/date";
+import Gallery from "../components/gallery";
+
 export default function Projects() {
   return (
-    <>
-      <h1>Projects</h1>
-      <p>Coming soon...</p>
-    </>
+     <section className="text-base/loose p-1">
+      <h2 className="text-2xl/6 my-4">Projects</h2>
+      <ul>
+        {["a","b"].map((val) => {
+          return (
+            // FIX ME: removing mb-5 causes shift
+            <li className="mb-5" key={val}>
+              Coming soon...
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 }

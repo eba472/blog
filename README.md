@@ -9,10 +9,9 @@ GOAL:
 
 
 TODO:
-- Remove tailwind from blog post ✅
-- center menu ✅
-- Add links to social media: Facebook, Instagram, Linkedin, Twitter, Github ✅
-- timeline
+- Refactoring: upgrade utils.module.css to tailwind ✅
+- Fix bug: when going too project, the title is moving ✅
+- detailed timeline with more info on projects
 - View full resume as PDF 
 - Good gallery view
 - List of projects
@@ -22,10 +21,11 @@ TODO:
 
 Nice to have
 - Black background with white text
+- Dark/White mode
 - Mouse animation
 - Welcome animation
-- Custom domain name: eba.dev => it is expensive: enkhbaatar.vercel.app is good enough
 - Midjourney profile image
+- 2 types of project: ML, WebDev
 
 
 Knowledge:
@@ -40,3 +40,31 @@ projects page idea:
 Styles:
 - hover color change: https://brittanychiang.com/
 - mouse background color change: https://brittanychiang.com/
+
+Machine learning projects
+
+Ideas:
+Log with ip address
+integrate with my twitter using db
+Ideas to implement page: dashboard: people can like 1 per ip address 
+Work on the dict: people can see the description from all 4 dictionaries
+Tweet new ideas
+
+New business ideas:
+1. Honi tsgaan idee zardag market place
+2. Flexclub: mashin turees to raid hailing
+3. connectcargo owners to truck drivers
+4. IT school
+
+Useful website list
+
+Ideas
+- chatGPT prompt manager: My most commonly used chatGPT prompts would be stored as bookmark
+
+
+Common chatGPT prompts
+
+convert following css to tailwind css
+.lightText {
+  color: #666;
+}
