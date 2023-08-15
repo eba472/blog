@@ -26,6 +26,8 @@ date: '2023-08-12'
 - **Single side**: {t|r|b|l,x,y,none}-{size}  top, right, bottom, left, horizontal, vertical, all sides
 - **Negative value**: `-mt-8`  prefix the class name with a dash
 - **Tailwind scale**: 1 is 0.25rem. ex: m-1
+- **Responsive design**: sm:640px, md:768px lg:1024px, xl:1280px, 2xl:1536px, 
+  - `md:w-32`: width is 32 for all screen size higher than 768px. Default value for others
 
 
 ### Common classNames

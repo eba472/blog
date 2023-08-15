@@ -5,9 +5,6 @@ import "./styles/global.css";
 import Navbar from "./components/navbar";
 import SocialNetwork from "./components/sns";
 
-const name = "Tserendendev Enkhbaatar";
-export const siteTitle = "Eba's personal blog";
-
 const graphik = localFont({
   src: [
     {
@@ -39,7 +36,7 @@ export default function Layout({ children }) {
         graphik.variable
       )}
     >
-      <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased mb-40 flex flex-col md:flex-row mt-8 mx-auto text-lg/6">
         <div className="max-w-36rem mx-auto px-4 py-0 my-16">
           <header className="flex flex-col items-center">
             <Image
@@ -50,8 +47,8 @@ export default function Layout({ children }) {
               width={144}
               alt="profile"
             />
-            <h1 className="text-3.5xl text-center font-extrabold tracking-tight mb-4 mt-4">
-              {name}
+            <h1 className="text-center font-extrabold tracking-tight mt-4">
+              Tserendendev Enkhbaatar<br/> ( Eba )
             </h1>
           </header>
           <Navbar />

@@ -5,10 +5,10 @@ import { ideas } from "./ideas";
 export default function Projects() {
   return (
     <section className="text-base/loose p-1">
-      <h2 className="text-2xl/6 mb-8">New project ideas</h2>
+      <h2>New project ideas</h2>
       <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
         {ideas.map((idea) => (
-          <Card>
+          <Card key={idea.slug}>
             <Link href={`/projects/${idea.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
@@ -30,7 +30,7 @@ export default function Projects() {
 
                 <h2
                   id="idea-post"
-                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
+                  className="mt-4 font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
                 >
                   {idea.title}
                 </h2>

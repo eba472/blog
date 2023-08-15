@@ -1,4 +1,5 @@
 import { IEvent } from "./experience";
+import Skill from "./skill";
 
 export default function LifeEvent({ event }: { event: IEvent }) {
   return (
@@ -7,7 +8,7 @@ export default function LifeEvent({ event }: { event: IEvent }) {
       <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
         {event.date}
       </time>
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+      <h3 className="font-semibold text-gray-900 dark:text-white">
         {event.title} at <span className="italic font-bold">{event.org}</span>
       </h3>
       <p className="text-base font-normal text-gray-500 dark:text-gray-400">
@@ -18,6 +19,11 @@ export default function LifeEvent({ event }: { event: IEvent }) {
           <li key={ac}>{ac}</li>
         ))}
       </ol>
+      <div className="m-3">
+        {event.skills.map((skill) => (
+          <Skill skill={skill} />
+        ))}
+      </div>
     </li>
   );
 }

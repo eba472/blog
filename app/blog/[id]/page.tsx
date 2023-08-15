@@ -12,7 +12,7 @@ export default async function Post({ params }) {
   const blog = await getBlogData(params.id);
   return (
     <article>
-      <h1 className="text-2xl leading-tight font-extrabold tracking-tighter my-4">
+      <h1 className="leading-tight font-extrabold tracking-tighter my-4">
         {blog.title}
       </h1>
       <div className="text-gray-500">

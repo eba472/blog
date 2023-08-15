@@ -10,7 +10,7 @@ export default async function Post({ params }) {
   const blogs = getSortedBlogsData();
   return (
     <section className="text-base/loose p-1">
-      <h2 className="text-2xl/6 my-4">Blog</h2>
+      <h2>Blog</h2>
       <ul className="list-none p-0 m-0">
         {blogs.map(({ id, date, title }) => {
           return (
