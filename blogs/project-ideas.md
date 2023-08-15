@@ -1,6 +1,7 @@
 ---
 title: 'Project ideas'
 date: '2023-08-12'
+tags: Software, Startup
 ---
 
 1. How to find a project ideas

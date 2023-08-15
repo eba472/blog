@@ -16,7 +16,6 @@ interface MarkDownHeader {
   date: string;
 }
 
-
 const blogsDirectory = path.join(process.cwd(), "blogs");
 
 export function getSortedBlogsData() {
@@ -26,9 +25,13 @@ export function getSortedBlogsData() {
     const fullPath = path.join(blogsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const matterResult = matter(fileContents);
+    const tags: string[] = matterResult.data.tags
+      ? matterResult.data.tags.split(", ")
+      : [];
     return {
       id,
-      ...matterResult.data as MarkDownHeader,
+      ...(matterResult.data as MarkDownHeader),
+      tags
     };
   });
   return allBlogsData.sort((a, b) => {
@@ -60,6 +63,6 @@ export async function getBlogData(id: string): Promise<Blog> {
   return {
     id,
     contentHtml,
-    ...matterResult.data as MarkDownHeader,
+    ...(matterResult.data as MarkDownHeader),
   };
 }

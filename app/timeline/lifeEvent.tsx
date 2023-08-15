@@ -1,5 +1,5 @@
 import { IEvent } from "./experience";
-import Skill from "./skill";
+import Tag from "../components/tag";
 
 export default function LifeEvent({ event }: { event: IEvent }) {
   return (
@@ -21,7 +21,7 @@ export default function LifeEvent({ event }: { event: IEvent }) {
       </ol>
       <div className="m-3">
         {event.skills.map((skill) => (
-          <Skill skill={skill} />
+          <Tag key={skill} name={skill} />
         ))}
       </div>
     </li>

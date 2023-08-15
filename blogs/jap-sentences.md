@@ -1,6 +1,7 @@
 ---
 title: 'Japanese lesson: talking about plan'
 date: '2023-08-01'
+tags: Japanese
 ---
 
 1. 私はモンゴルに行く予定です。(Watashi wa Mongoru ni iku yotei desu.)

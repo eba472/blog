@@ -1,6 +1,7 @@
 ---
 title: 'Useful interview questions from Linkedin'
 date: '2023-07-01'
+tags: Software, Interview
 ---
 
 I've been hired by Google, Epic Games and Affirm to name a few.

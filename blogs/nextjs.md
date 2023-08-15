@@ -1,6 +1,7 @@
 ---
 title: 'Learning nextJS fundamentals'
 date: '2023-08-12'
+tags: Software, Tech, FrontEnd
 ---
 
 ### Useful commands:

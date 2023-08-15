@@ -15,7 +15,7 @@ import director from "/public/images/gallery/With our director at Founder Instit
 
 export default function Gallery() {
   return (
-    <div className="my-8 w-full md:w-[650px] lg:w-[800px] mx-auto">
+    <div className="my-8">
       <div className="columns-2 sm:columns-3 gap-y-4 my-4">
         <div className="relative mb-2">
           <Image

@@ -1,9 +1,10 @@
 ---
-title: 'Communities I follow'
-date: '2023-08-12'
+title: 'Reading list'
+date: '2023-08-13'
+tags: Learning
 ---
 
-### Community
+### Communities
 1. [Microconf](https://microconf.com/): Community for Bootstrapped SaaS Founders
 2. [Lenny's Newsletter](https://www.lennysnewsletter.com/about): Building product, Go-to-market, Growth strategy, Career, Sales
 3. [ByteByteGo](https://bytebytego.com/): Everything you need to take your system design skill to the next level

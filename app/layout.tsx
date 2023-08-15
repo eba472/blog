@@ -52,7 +52,7 @@ export default function Layout({ children }) {
             </h1>
           </header>
           <Navbar />
-          <main>{children}</main>
+          <main className="w-full md:w-[650px] lg:w-[800px] mx-auto">{children}</main>
           <SocialNetwork />
         </div>
       </body>
