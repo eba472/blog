@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./styles/global.css";
 import Navbar from "./components/navbar";
 import SocialNetwork from "./components/sns";
+import { Analytics } from '@vercel/analytics/react';
 
 const graphik = localFont({
   src: [
@@ -48,11 +49,15 @@ export default function Layout({ children }) {
               alt="profile"
             />
             <h1 className="text-center font-extrabold tracking-tight mt-4">
-              Tserendendev Enkhbaatar<br/> ( Eba )
+              Tserendendev Enkhbaatar
+              <br /> ( Eba )
             </h1>
           </header>
           <Navbar />
-          <main className="w-full md:w-[650px] lg:w-[800px] mx-auto">{children}</main>
+          <main className="w-full md:w-[650px] lg:w-[800px] mx-auto">
+            {children}
+          </main>
+          <Analytics />
           <SocialNetwork />
         </div>
       </body>
