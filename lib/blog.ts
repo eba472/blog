@@ -20,7 +20,7 @@ const blogsDirectory = path.join(process.cwd(), "blogs");
 
 export function getSortedBlogsData() {
   const fileNames = fs.readdirSync(blogsDirectory);
-  const allBlogsData = fileNames.map((fileName) => {
+  const blogs = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, "");
     const fullPath = path.join(blogsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
@@ -28,13 +28,16 @@ export function getSortedBlogsData() {
     const tags: string[] = matterResult.data.tags
       ? matterResult.data.tags.split(", ")
       : [];
+    const isPublic = matterResult.data.public;
     return {
       id,
       ...(matterResult.data as MarkDownHeader),
-      tags
+      tags,
+      isPublic,
     };
   });
-  return allBlogsData.sort((a, b) => {
+
+  return blogs.sort((a, b) => {
     if (a.date < b.date) {
       return 1;
     } else {

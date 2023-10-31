@@ -1,7 +1,8 @@
 ---
 title: 'Web analytics'
 date: '2023-08-16'
-tags: FrontEnd, Web, Software
+tags: Software, FrontEnd
+public: true
 ---
 
 ### FrontEnd important analytics

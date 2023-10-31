@@ -12,25 +12,25 @@ export default async function Post() {
   return (
     <section className="text-base/loose p-1">
       <h1>Blog</h1>
-      {blogs.map(({ id, date, title, tags }) => {
-        return (
-          <div key={id}>
-            <div className="flex justify-between">
-              <Link href={`/blog/${id}`}>
-                {title}
-              </Link>
-              <small className="text-gray-500 whitespace-nowrap">
-                <Date dateString={date} />
-              </small>
+      {blogs.map(({ id, date, title, tags, isPublic }) => {
+        if (isPublic) {
+          return (
+            <div key={id}>
+              <div className="flex justify-between">
+                <Link href={`/blog/${id}`}>{title}</Link>
+                <small className="text-gray-500 whitespace-nowrap">
+                  <Date dateString={date} />
+                </small>
+              </div>
+              <div>
+                {tags.map((skill) => (
+                  <Tag key={skill} name={skill} />
+                ))}
+              </div>
+              <hr className="h-px my-4 bg-gray-100 border-0 rounded dark:bg-gray-700" />
             </div>
-            <div>
-              {tags.map((skill) => (
-                <Tag key={skill} name={skill} />
-              ))}
-            </div>
-            <hr className="h-px my-4 bg-gray-100 border-0 rounded dark:bg-gray-700" />
-          </div>
-        );
+          );
+        }
       })}
     </section>
   );

@@ -2,6 +2,7 @@
 title: 'Reading list'
 date: '2023-08-13'
 tags: Learning
+public: true
 ---
 
 ### Communities
