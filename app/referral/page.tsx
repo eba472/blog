@@ -55,6 +55,10 @@ Campaign link: https://r10.to/hUcUwu?openExternalBrowser=1`,
       question: `MNP transfer hiined suljeegui bolohiig tailbarlah:`,
       answer: `MNP transfer tovchiig darsnaar, tanii omnoh sim idevhgui boloh baigaa. Enehuu process maani omnoh suljeegee tsutslaad, rakuten ruu shiljuulj baigaa ym. Tegheer heseg hugatsaand ta data, suljeegui yavah baigaa.`,
     },
+    {
+      question: `Delgerengui tailbar:`,
+      answer: `Delgerengui medeelliig ta doorh linkeer orj uzeerei: https://www.facebook.com/61556603424412/videos/1554903518404051/`,
+    },
   ];
 
   return questions.map((q, i) => (
