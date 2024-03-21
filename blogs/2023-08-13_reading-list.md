@@ -14,3 +14,4 @@ public: true
 
 ### Knowledge
 **A slug**: a human-readable, unique identifier, used to identify a resource instead of a less human-readable identifier like an id .
+

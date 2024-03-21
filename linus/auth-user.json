@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "login_cd": "123",
+    "user_name": "\u30b9\u30fc\u30d1\u30fc\u7ba1\u7406\u8005",
+    "user_name_kana": "\u30b9\u30fc\u30d1\u30fc\u30ab\u30f3\u30ea\u30b7\u30e3",
+    "email": "user0@example.com",
+    "email_verified_at": null,
+    "access_level": 4,
+    "service_office_id": 1,
+    "corporate_id": 1,
+    "created_at": "2023-11-22T04:14:50.000000Z",
+    "updated_at": "2023-11-22T04:14:50.000000Z"
+}

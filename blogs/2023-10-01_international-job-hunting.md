@@ -10,9 +10,6 @@ Useful links
   - Backend positions in Germany: https://relocate.me/search?time=any&category%5B%5D=back-end
 - Wellfound: U.S.-based Tech Companies Hiring International Talent
 
-
-
-
 Company ideas
 - Navan: Corporate Travel & Expense Management Just Got Easier
 - 

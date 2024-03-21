@@ -1,0 +1,1 @@
+`App Router` is a new paradigm for building applications.
