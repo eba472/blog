@@ -1,5 +1,19 @@
 export const ideas = [
   {
+    date: "2026-03-01",
+    slug: "5",
+    title: "AI todo list gamifier",
+    description:
+      "A big dashboard where AI breaks large goals into 10 to 20 human-editable steps, estimates effort, researches in the background, and helps people complete one task at a time toward a daily or weekly goal.",
+  },
+  {
+    date: "2026-03-01",
+    slug: "6",
+    title: "Collective RAG for life in Japan",
+    description:
+      "A community NotebookLM-style RAG where people can upload PDFs, ask nuanced questions about Japanese bureaucracy such as unemployment benefits, and improve the shared knowledge base when they choose to contribute public documents.",
+  },
+  {
     date: "2023-08-14",
     slug: "1",
     title: "chatGPT prompt manager",
